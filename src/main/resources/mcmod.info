@@ -1,0 +1,16 @@
+[
+{
+  "modid": "discordrpcmod",
+  "name": "Discord RPC",
+  "description": "Discord RPC mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DesignDeveloperr"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
