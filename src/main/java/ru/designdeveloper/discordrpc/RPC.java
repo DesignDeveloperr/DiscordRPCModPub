@@ -8,19 +8,19 @@ import org.lwjgl.opengl.Display;
 
 public class RPC {
 
-    private static final String client_id = "706048306018517023";
+    private static final String client_id = DiscordRpc.CLIENT_ID;
 
     public static void init() {
         final DiscordEventHandlers handlers = new DiscordEventHandlers();
         DiscordRPC.discordInitialize(client_id, handlers, true);
-        Display.setTitle("StonksCraft | " + Minecraft.getMinecraft().mcDataDir.getName());
+        Display.setTitle(DiscordRpc.PROJECT_NAME + " | " + Minecraft.getMinecraft().mcDataDir.getName());
     }
 
     public static void loadingPresence() {
         final DiscordRichPresence rich = new DiscordRichPresence();
         rich.details = "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430...";
         rich.largeImageKey = "logo";
-        rich.largeImageText = "StonksCraft.ru";
+        rich.largeImageText = DiscordRpc.PROJECT_NAME;
         DiscordRPC.discordUpdatePresence(rich);
     }
 
@@ -30,7 +30,7 @@ public class RPC {
         rich.details = mc.mcDataDir.getName() + " | " + mc.getSession().getUsername();
         rich.startTimestamp = System.currentTimeMillis() / 1000L;
         rich.largeImageKey = "logo";
-        rich.largeImageText = "StonksCraft.ru";
+        rich.largeImageText = DiscordRpc.PROJECT_NAME;
         DiscordRPC.discordUpdatePresence(rich);
     }
 

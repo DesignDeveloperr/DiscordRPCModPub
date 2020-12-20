@@ -14,6 +14,8 @@ public class DiscordRpc {
     public static final String MOD_ID = "discordrpcmod";
     public static final String MOD_VERSION = "GRADLEMODVERSION";
     public static final String MOD_NAME = "Discord RPC";
+    public static final String CLIENT_ID = "";
+    public static final String PROJECT_NAME = "";
 
     @SidedProxy(clientSide = "ru.designdeveloper.discordrpc.ClientProxy", serverSide = "ru.designdeveloper.discordrpc.CommonProxy")
     public static CommonProxy proxy;
